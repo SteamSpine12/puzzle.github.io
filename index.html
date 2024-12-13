@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <style>
+        body {
+            background-color: #0027E9;
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+
+<!--Different URLS are a problem-->
+<!--Need to detect which element is clicked-->
+
+</head>
+<body><b><h1>Next Puzzle Location:</h1></b>
+    <div id="container">
+        <h1 id="display"></h1>
+    </div>
+    <script>
+        let location_array = ["Bookshelf", "Junk Drawer", "Fridge", "Garage Cabinet", "Shed", "Laundry Room", "Coffee Table", "Office", "Downstairs Bathroom", "Upstairs Bathroom", "Garage Shelf", "Piano", "Dining Room", "Downstairs Hallway", "Upstairs Hallway", "Wine Rack"];
+        let randomIndex = Math.floor(Math.random() * location_array.length);
+        let randomElement = location_array[randomIndex];
+        let display = document.getElementById("display");
+        display.innerHTML = randomElement;
+    </script>
+</body>
+</html>
